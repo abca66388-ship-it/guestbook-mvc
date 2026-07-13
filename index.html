@@ -6,32 +6,68 @@
 
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 40px;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #0077b6;
+            margin-bottom: 20px;
         }
 
         input {
-            padding: 10px;
+            width: 250px;
+            padding: 12px;
+            border: 2px solid #4facfe;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 15px;
         }
 
         button {
-            padding: 10px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
             cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e63946;
+            transform: scale(1.05);
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Hello World App</h1>
+    <div class="container">
+        <h1>🌍 Hello World App</h1>
 
-    <form>
-        <input type="text" name="username" placeholder="Enter Name">
-        <button type="submit">Submit</button>
-    </form>
+        <form>
+            <input type="text" placeholder="Enter Your Name">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
 </body>
 
 </html>
-
 
